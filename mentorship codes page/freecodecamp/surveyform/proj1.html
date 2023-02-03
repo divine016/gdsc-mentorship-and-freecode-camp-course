@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>survey form</title>
+        <link rel="stylesheet" href="proj1.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="title">kouts cq survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve on the platform.</p>
+        </div>
+        
+        <form id="survey-form" action="">
+            <fieldset>
+                <label for="name" id="name-label">Enter Your First Name:<input type="text" id="name" placeholder="Name" required></label>
+                <label for="email" id="email-label">Enter Your First Email:<input type="email" id="email" placeholder="Email" required></label>
+                <label for="number" id="number-label">Enter Your Number:<input type="number" id="number" placeholder="number" min="4" max="12"></label>
+                <label for="new-password" id="password-label">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+            </fieldset>
+            <fieldset>
+                <label for="select">Which option best describes your current role?</label>
+                <select name="select" id="dropdown" placeholder="Select current role">
+                    <option value="1">Select current role</option>
+                    <option value="2">Designer</option>
+                    <option value="3">Developer</option>
+                    <option value="4">Food scientist</option>
+                    <option value="5">Other</option>
+                </select>
+                <label for="phrase">What would you like us to imptove on?</label>
+                <label for="Design"> <input class="inline" id="design" name="improve-type" type="radio">Design</label> 
+                <label for="content"> <input class="inline" id="content" name="improve-type" type="radio">Content</label>
+                <label for="layout"> <input class="inline" id="layout" name="improve-type" type="radio">Layout</label>
+                
+                <label for="phrase">What do you like about us?</label>
+                <label for="checkbox"> <input class="inline" name="front" id="front" type="checkbox">Front-end Projects</label>
+                <label for="checkbox"> <input class="inline" name="back" id="back" type="checkbox">Back-end Projects</label>
+                <label for="checkbox"> <input class="inline" name="data" id="data" type="checkbox">Data Visualization</label>
+                <label for="checkbox"> <input class="inline" name="challenge" id="challenge" type="checkbox">Challenges</label>
+                <label for="checkbox"> <input class="inline" name="open" id="open" type="checkbox">Open Source Community</label>
+            </fieldset>
+            <fieldset>
+                <label for="referrer">How did you hear about us?
+                    <select id="referrer" name="referrer">
+                      <option value="">(select one)</option>
+                      <option value="1">News</option>
+                      <option value="2">YouTube Channel</option>
+                      <option value="3">Other</option>
+                    </select>
+                  </label>
+                  <label for="bio">Provide a bio:
+                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+                  </label>
+            </fieldset>
+            <input class="submit" type="submit" value="submit">
+        </form>
+    </body>
+</html>
