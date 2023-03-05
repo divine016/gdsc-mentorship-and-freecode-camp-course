@@ -1,0 +1,75 @@
+:root{
+ --buttonlogo: rgb(39, 37, 131);
+}
+*{
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;  
+}
+main{
+    z-index: -3;
+    opacity: 0.3;
+    background-image:url(./backgroundimg.jpg);
+}
+
+nav{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+   margin: 10px;
+    padding: 2px 50px;
+}
+nav p{
+    font-size: 16px;
+    font-weight:bold;
+    background-color:var(--buttonlogo);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;  
+}
+nav h1{
+    font-size: 35px;
+    color:var(--buttonlogo) ;
+    font-variant: small-caps; 
+}
+#landing-page{
+    
+    z-index: 1;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+    padding: 75px 0;
+}
+#landing-page p{
+    font-size: 25px;
+    padding: 20px 0;
+}
+#landing-page h1{
+    font-size: 50px;
+}
+#landing-page button{
+    margin-top: 20px;
+    padding: 10px;
+    width:100px;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+    border-radius: 5px;
+    background-color: var(--buttonlogo);
+    border: solid var(--buttonlogo);
+}
+#landing-page button a{
+    background-color: var(--buttonlogo);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+hr{
+    z-index: -1;
+    height: 10px;
+    border: 1px solid rgb(67, 67, 68) ;
+    background-color: rgb(67, 67, 68);
+}
