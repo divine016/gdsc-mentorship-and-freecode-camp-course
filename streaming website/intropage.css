@@ -8,13 +8,19 @@
 }
 main{
     z-index: -3;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     background-image:url(./backgroundimg.jpg);
 }
-
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 25px;
+}
 nav{
 
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
    margin: 10px;
@@ -49,6 +55,7 @@ nav h1{
 }
 #landing-page h1{
     font-size: 50px;
+    padding: 0 50px;
 }
 #landing-page button{
     margin-top: 20px;
@@ -72,4 +79,14 @@ hr{
     height: 10px;
     border: 1px solid rgb(67, 67, 68) ;
     background-color: rgb(67, 67, 68);
+}
+#section2{
+    display: flex;
+    padding: 70px 45px;
+    justify-content: space-around;
+}
+#section2 .tv{
+    text-align: left;
+    margin: auto 0px;
+    width: 500px; 
 }
