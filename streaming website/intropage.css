@@ -1,5 +1,7 @@
 :root{
+ --button-color: white;
  --buttonlogo: rgb(39, 37, 131);
+ --text-color: black;
 }
 *{
     /* background-color: black; */
@@ -12,30 +14,34 @@ main{
     background-image:url(./backgroundimg.jpg);
 }
 h1{
+    color: var(--text-color);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
 p{
+    color: var(--text-color);
     font-size: 25px;
 }
 nav{
-
+    color: var(--text-color);
     /* position: relative; */
     display: flex;
     justify-content: space-between;
-   margin: 10px;
+    margin: 10px;
     padding: 2px 50px;
 }
-nav p{
+button{
+    border: none;
     font-size: 16px;
     font-weight:bold;
     background-color:var(--buttonlogo);
-    color: white;
-    padding: 10px;
+    color: var(--button-color);
+    padding: 10px 25px;
     margin: 10px;
     border-radius: 5px;  
 }
 nav h1{
+    padding: 10px 25px;
     font-size: 35px;
     color:var(--buttonlogo) ;
     font-variant: small-caps; 
@@ -48,16 +54,19 @@ nav h1{
     margin:0 auto;
     text-align: center;
     padding: 75px 0;
+    color: var(--text-color);
 }
 #landing-page p{
+    color: var(--text-color);
     font-size: 25px;
     padding: 20px 0;
 }
 #landing-page h1{
+    color: var(--text-color);
     font-size: 50px;
     padding: 0 50px;
 }
-#landing-page button{
+/* button{
     margin-top: 20px;
     padding: 10px;
     width:100px;
@@ -67,11 +76,11 @@ nav h1{
     border-radius: 5px;
     background-color: var(--buttonlogo);
     border: solid var(--buttonlogo);
-}
-#landing-page button a{
+} */
+button a{
     background-color: var(--buttonlogo);
     text-decoration: none;
-    color: white;
+    color: var(--button-color);
     font-size: 16px;
 }
 hr{
@@ -83,10 +92,55 @@ hr{
 #section2{
     display: flex;
     padding: 70px 45px;
+    color: var(--text-color);
     justify-content: space-around;
 }
-#section2 .tv{
+.tv{
+    color: var(--text-color);
     text-align: left;
     margin: auto 0px;
     width: 500px; 
 }
+#download{
+    display: flex;
+    color: var(--text-color);
+    padding: 70px 45px;
+    justify-content: space-around;
+}
+#kids{
+    display: flex;
+    color: var(--text-color);
+    padding: 70px 45px;
+    justify-content: space-around;
+}
+ #downbut{
+    text-align: center;
+    margin: 20px 0 20px 750px;
+}
+#question{
+    text-align: center;
+    display: block;
+}
+#question h1{
+    margin: 20px;
+}
+#question ol{
+    margin: 20px;
+    /* margin: 0 0 0 450px; */
+    justify-content: center;
+    align-items: center;
+
+}
+#question ol li{
+    background-color: rgba(67, 67, 68, 0.3);
+    width: 700px;
+    height: 30px;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    color: var(--text-color);
+    
+}
+@med
