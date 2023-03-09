@@ -1,10 +1,10 @@
 :root{
  --button-color: white;
  --buttonlogo: rgb(39, 37, 131);
- --text-color: black;
+ --text-color: #f7f4f4;
 }
 *{
-    /* background-color: black; */
+    background-color: black;
     margin: 0;
     padding: 0;  
 }
@@ -14,6 +14,7 @@ main{
     background-image:url(./backgroundimg.jpg);
 }
 h1{
+    
     color: var(--text-color);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
@@ -23,7 +24,7 @@ p{
     font-size: 25px;
 }
 nav{
-    color: var(--text-color);
+    /* color: var(--text-color); */
     /* position: relative; */
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,14 @@ button{
 nav h1{
     padding: 10px 25px;
     font-size: 35px;
-    color:var(--buttonlogo) ;
+    /* color:var(--buttonlogo) ; */
+    /* background-color: #f3ec78; */
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    /* background-size: 100%; */
+    -webkit-background-clip: text;
+    /* -moz-background-clip: text; */
+    -webkit-text-fill-color: transparent; 
+    /* -moz-text-fill-color: transparent; */
     font-variant: small-caps; 
 }
 #landing-page{
