@@ -8,6 +8,7 @@
     --buttonlogo: ;
     --text-color: #f7f4f4;
    }
+/* ===============================styling for the  nav bar================================ */
 .nav{
     /* color: var(--text-color); */
     /* position: relative; */
@@ -114,7 +115,7 @@ button a{
 .nav button{
     margin-right: 70px
 }
-/* ==========dropdown============== */
+/* ==========dropdown menu class============== */
 .dropdown ol li{
     list-style: none;
     display: inline-block;
@@ -179,9 +180,19 @@ button a{
     .nav .toggle_btn{
         display: block;
     }
+    /* .nav .toggle_btn{
+        margin: 0 8px;
+    } */
 }
 @media(max-width:576px){
     .dropdown{
         left: 2rem;
         width: unset;
-    }}
+    }
+    .nav{
+        width:0%;
+    }
+    /* .nav .toggle_btn{
+        margin: 0 8px;
+    } */
+}

@@ -44,3 +44,8 @@ button{
     margin: 10px;
     border-radius: 5px;  
 }
+@media (max-width:762px) {
+    button #but-kid{
+        margin-top:px;
+    }    
+}

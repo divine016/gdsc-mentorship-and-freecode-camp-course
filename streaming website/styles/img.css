@@ -16,7 +16,7 @@
     padding: 30px 20px;
 }
 .img img{
-    width: 100%;
+    width: 300px;
     max-width: 350px;
     height: 300px;
     object-fit: cover;
